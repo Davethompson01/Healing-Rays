@@ -1,9 +1,9 @@
 import React from "react";
 
-const AboutUs = () => {
+const AboutUs = ({ aboutUsRef }) => {
   return (
     <>
-      <div className="bg-[#fff27e] text-center px-14 py-10 grid gap-3 font-medium">
+      <div ref={aboutUsRef} className="bg-[#fff27e] px-2 text-center sm:px-16 py-10 grid gap-3 font-medium">
         <h1 className="font-semibold text-[40px] "> About us</h1>
         <p>
           Headquartered in Nigeria with close affiliations to Swiss health

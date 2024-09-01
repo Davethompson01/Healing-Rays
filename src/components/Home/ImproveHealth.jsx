@@ -17,7 +17,7 @@ const ImproveHealth = () => {
   ];
   return (
     <div>
-      <div className="py-9 bg-gray-300 grid-items-center text-center">
+      <div className="py-9 bg-gray-300 grid-items-center text-center px-16">
         <h1 className="text-[25px] font-semibold pb-5">
           How we improve healthcare in Nigeria
         </h1>

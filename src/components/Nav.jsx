@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 
-const HamburgerMenu = () => {
+const Nav = ({ aboutUsRef }) => {
+  const handleScrollToAboutUs = () => {
+    // Scroll smoothly to the AboutUs section when the button is clicked
+    if (aboutUsRef.current) {
+      aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const liTags = [
-    "Home",
-    "About",
-    "Photo Gallery",
-    "Contact us",
-    "Terms and conditions",
+    { label: "Home", action: () => console.log("Home clicked") },
+    { label: "About", action: handleScrollToAboutUs },
+    {
+      label: "Photo Gallery",
+      action: () => console.log("Photo Gallery clicked"),
+    },
+    { label: "Contact us", action: () => console.log("Contact us clicked") },
+    {
+      label: "Terms and conditions",
+      action: () => console.log("Terms and conditions clicked"),
+    },
   ];
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,7 +68,11 @@ const HamburgerMenu = () => {
           >
             <ul className="p-4">
               {liTags.map((element, index) => (
-                <li key={index} className="py-2">
+                <li
+                  key={index}
+                  className="py-2 cursor-pointer"
+                  onClick={element.action}
+                >
                   {element}
                 </li>
               ))}
@@ -67,4 +84,4 @@ const HamburgerMenu = () => {
   );
 };
 
-export default HamburgerMenu;
+export default Nav;

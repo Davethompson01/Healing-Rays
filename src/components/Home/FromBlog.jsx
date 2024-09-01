@@ -25,16 +25,23 @@ const FromBlog = () => {
     },
   ];
   return (
-    <div>
+    <div className="px-3">
       <div>
         <h1>
           From the Blog <span>Latest health news in Nigeria </span> 
         </h1>
-        <div className="grid place-content-center gap-5 bg-[f0f0f0]">
+        <div
+          className={`grid place-content-center gap-5 bg-[f0f0f0] md:px-16 sm:grid-cols-2 md:grid-cols-3 `}
+        >
           {maps.map((map, index) => (
-            <div key={index} className="grid place-content-center bg-red-400">
-              <img src={map.img} alt="" />
-              <h1>{map.h1}</h1>
+            <div
+              key={index}
+              className={`grid gap-3 bg-white p-3 rounded-xl h-[600px] border-[1px] border-gray-400 hover:bg-yellow-400 `}
+            >
+              <div className="grid place-items-center ">
+                <img src={map.img} alt="" className="rounded-xl" />
+              </div>
+              <h1 className="text-3xl">{map.h1}</h1>
               <p>{map.p1}</p>
               <p>{map.p2}</p>
             </div>
