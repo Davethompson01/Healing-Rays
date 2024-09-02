@@ -25,7 +25,7 @@ const FromBlog = () => {
     },
   ];
   return (
-    <div className="px-3">
+    <div className="px-3 bg-[#F0F0F0]">
       <div>
         <h1>
           From the Blog <span>Latest health news in Nigeria </span> 
@@ -36,7 +36,7 @@ const FromBlog = () => {
           {maps.map((map, index) => (
             <div
               key={index}
-              className={`grid gap-3 bg-white p-3 rounded-xl h-[600px] border-[1px] border-gray-400 hover:bg-yellow-400 `}
+              className={`grid gap-3 bg-white p-3 rounded-xl h-[600px]  border-gray-400 hover:bg-yellow-400 `}
             >
               <div className="grid place-items-center ">
                 <img src={map.img} alt="" className="rounded-xl" />

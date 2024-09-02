@@ -3,7 +3,7 @@ import MainPage from "../components/Home/MainPage";
 import ImproveHealth from "../components/Home/ImproveHealth";
 import FindDoctor from "../components/Home/FindDoctor";
 import AboutUs from "../components/Home/AboutUs";
-import JoinUs from "../components/Home/joinUs";
+// import JoinUs from "../components/Home/joinUs";
 import FromBlog from "../components/Home/FromBlog";
 import Testimonials from "../components/Home/Testimonials";
 
@@ -14,7 +14,7 @@ const Home = () => {
       <ImproveHealth />
       <FindDoctor />
       <AboutUs />
-      <JoinUs />
+      {/* <JoinUs /> */}
       <FromBlog />
       <Testimonials />
     </div>
