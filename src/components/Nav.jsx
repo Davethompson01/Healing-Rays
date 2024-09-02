@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const liTags = [
     { p: "Home", path: "/" },
@@ -31,11 +32,7 @@ const Nav = () => {
           <ul className="p-4 flex gap-5">
             {liTags.map((element, index) => (
               <li key={index} className="py-2">
-                {element.p === "About" ? (
-                  <a href={element.path}>{element.p}</a>
-                ) : (
-                  <a href={element.path}>{element.p}</a>
-                )}
+                <Link to={element.path}>{element.p}</Link>
               </li>
             ))}
           </ul>
@@ -70,7 +67,11 @@ const Nav = () => {
               {liTags.map((element, index) => (
                 <div key={index}>
                   <p>
+<<<<<<< HEAD
                     <a href={element.path} onClick={scrollToSection}>{element.p}</a>
+=======
+                    <Link to={element.path}>{element.p}</Link>
+>>>>>>> c1800fb0a339716ab1b50c2cfd3a3fe613bf5771
                   </p>
                 </div>
               ))}

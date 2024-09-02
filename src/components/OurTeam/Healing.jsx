@@ -18,11 +18,11 @@ const Healing = () => {
     },
     {
       img: team1,
-      h1:"Director",
-      h3:"Mrs Odebode Abimbola Solape",
-      p:"Bsc Sociology OAU  Ile-ife",
-      p:"Osun state",
-      p:"NIgeria"
+      h1: "Director",
+      h3: "Mrs Odebode Abimbola Solape",
+      p: "Bsc Sociology OAU  Ile-ife",
+      p: "Osun state",
+      p: "NIgeria",
     },
   ];
   return (
@@ -33,10 +33,16 @@ const Healing = () => {
         <div>
           {maps.map((element, index) => (
             <div key={index}>
-             <div><img src={element.img} alt="" /></div>
-             <div>
+              <div>
+                <img src={element.img} alt="" />
+              </div>
+              <div>
                 <h1>{element.h1}</h1>
-             </div>
+                <h3>{element.h3}</h3>
+                <h4>{element.h4}</h4>
+                <p>{element.p}</p>
+                {/* <h1>{element.h1}</h1> */}
+              </div>
             </div>
           ))}
         </div>
