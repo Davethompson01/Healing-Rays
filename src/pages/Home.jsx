@@ -13,7 +13,9 @@ const Home = () => {
       <MainPage />
       <ImproveHealth />
       <FindDoctor />
+      <div id="About">
       <AboutUs />
+      </div>
       <JoinUs />
       <FromBlog />
       <Testimonials />

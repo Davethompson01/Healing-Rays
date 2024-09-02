@@ -10,6 +10,16 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prevState) => !prevState);
+  // 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      console.log("scrolled")
+      section.scrollIntoView({ behavior: "smooth" });
+      
+    }
+  };
+  // 
 
   return (
     <div className="bg-gray-300">
@@ -60,7 +70,7 @@ const Nav = () => {
               {liTags.map((element, index) => (
                 <div key={index}>
                   <p>
-                    <a href={element.path}>{element.p}</a>
+                    <a href={element.path} onClick={scrollToSection}>{element.p}</a>
                   </p>
                 </div>
               ))}
