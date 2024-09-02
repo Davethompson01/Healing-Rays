@@ -1,26 +1,29 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-const Nav = () => {
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+const Nav = ({ handleScrollToAbout }) => {
+  const navigate = useNavigate();
+  
   const liTags = [
     { p: "Home", path: "/" },
-    { p: "About", path: "/About" },
+    { p: "About", path: "/#About" },
     { p: "Photo Gallery", path: "/Hotgallery" },
     { p: "Our Team", path: "./OurTeam" },
     { p: "Terms and conditions", path: "./TermsHeader" },
   ];
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prevState) => !prevState);
-  // 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      console.log("scrolled")
-      section.scrollIntoView({ behavior: "smooth" });
-      
+  const handleLinkClick = (path) => {
+    if (path === "/#About") {
+      if (window.location.pathname === "/") {
+        handleScrollToAbout(); 
+      } else {
+        navigate("/"); 
+        setTimeout(handleScrollToAbout, 0); 
+      }
+    } else {
+      navigate(path);
     }
   };
-  // 
 
   return (
     <div className="bg-gray-300">
@@ -32,47 +35,19 @@ const Nav = () => {
           <ul className="p-4 flex gap-5">
             {liTags.map((element, index) => (
               <li key={index} className="py-2">
-                <Link to={element.path}>{element.p}</Link>
+                <p onClick={() => handleLinkClick(element.path)}>{element.p}</p>
               </li>
             ))}
           </ul>
         </div>
-        <div
-          className="flex flex-col justify-around gap-2 cursor-pointer z-50 sm:hidden"
-          onClick={toggleMenu}
-        >
-          <div
-            className={`w-8 h-0.5 bg-black transition-transform duration-300 ${
-              isOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          ></div>
-          <div
-            className={`w-8 h-0.5 bg-black transition-opacity duration-300 ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
-          ></div>
-          <div
-            className={`w-8 h-0.5 bg-black transition-transform duration-300 ${
-              isOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          ></div>
-          <div
-            className={`absolute top-0 left-0 w-48 bg-white border border-gray-300 shadow-lg transition-transform duration-300 transform ${
-              isOpen
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-full opacity-0"
-            }`}
-          >
+        {/* Mobile menu */}
+        <div className="flex flex-col justify-around gap-2 cursor-pointer z-50 sm:hidden">
+          {/* Mobile menu items */}
+          <div className="absolute top-0 left-0 w-48 bg-white border border-gray-300 shadow-lg transition-transform duration-300 transform">
             <ul className="p-4">
               {liTags.map((element, index) => (
                 <div key={index}>
-                  <p>
-<<<<<<< HEAD
-                    <a href={element.path} onClick={scrollToSection}>{element.p}</a>
-=======
-                    <Link to={element.path}>{element.p}</Link>
->>>>>>> c1800fb0a339716ab1b50c2cfd3a3fe613bf5771
-                  </p>
+                  <p onClick={() => handleLinkClick(element.path)}>{element.p}</p>
                 </div>
               ))}
             </ul>
