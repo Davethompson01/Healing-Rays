@@ -1,11 +1,6 @@
 import React from "react";
-import Nav from "../Nav";
-import { useRef } from "react";
-import AboutUs from "./AboutUs";
 
 const MainPage = () => {
-  const aboutUsRef = useRef(null);
-
   return (
     <div
       className="bg-cover bg-center bg-no-repeat"
@@ -15,9 +10,8 @@ const MainPage = () => {
         height: "500px",
       }}
     >
-      <Nav aboutUsRef={aboutUsRef} />
       <div className="relative inset-0 flex items-center justify-start">
-        <div className=" md:bg-yellow-500 md:bg-opacity-30 pl-16 py-8 md:w-[60%] md:grid gap-4">
+        <div className=" md:bg-yellow-500 md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-4">
           <h1 className="text-4xl  md:text-[3rem] font-bold text-white">
             The No.1 Platform for Telemedicine in Nigeria
           </h1>
@@ -37,7 +31,6 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <AboutUs aboutUsRef={aboutUsRef} />
     </div>
   );
 };
