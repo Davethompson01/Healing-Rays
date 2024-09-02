@@ -1,6 +1,8 @@
 import React from "react";
+// import { useRef } from "react";
 
 const MainPage = () => {
+  
   return (
     <div
       className="bg-cover bg-center bg-no-repeat"
