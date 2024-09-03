@@ -6,7 +6,7 @@ const Nav = ({ handleScrollToAbout }) => {
   const liTags = [
     { p: "Home", path: "/" },
     { p: "About", path: "/#About" },
-    { p: "Photo Gallery", path: "/Hotgallery" },
+    { p: "Contact Us", path: "/Contact Us" },
     { p: "Our Team", path: "./OurTeam" },
     { p: "Terms and conditions", path: "./TermsHeader" },
   ];
@@ -37,7 +37,7 @@ const Nav = ({ handleScrollToAbout }) => {
             {liTags.map((element, index) => (
               <li
                 key={index}
-                className="py-2"
+                className="py-2 font-bold text-[17px]"
                 onClick={() => handleLinkClick(element.path)}
               >
                 <Link to={element.path}>{element.p}</Link>

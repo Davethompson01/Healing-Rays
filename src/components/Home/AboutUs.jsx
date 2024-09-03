@@ -23,9 +23,7 @@ const AboutUs = () => {
         Additionally, we created the Healing Rays nutritional NGO in fulfilment
         of our commitment to promote good healthcare in Nigeria and our…
       </p>
-      <div className="grid place-content-center">
-        <p className="bg-yellow-400 p-3">Learn MORE</p>
-      </div>
+     
     </div>
   );
 };

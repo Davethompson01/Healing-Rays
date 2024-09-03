@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 // import { useRef } from "react";
 
 const MainPage = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/ContactUs");
+  };
   return (
     <div
       className="bg-cover bg-center bg-no-repeat before:bg-black z-50"
@@ -12,7 +17,7 @@ const MainPage = () => {
       }}
     >
       <div className="relative  flex items-center justify-start  ">
-        <div className=" md:bg-[#DEBB41] md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-4">
+        <div className="  md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-4">
           <h1 className="text-4xl  md:text-[3rem] font-bold text-white">
             The No.1 Platform for Telemedicine in Nigeria
           </h1>
@@ -25,10 +30,16 @@ const MainPage = () => {
             of telemedicine in Nigeria, Healing Rays brings the doctor to your
             doorstep.
           </p>
-          <div>
-            <button className="mt-6 bg-white text-black px-6 py-2 rounded-full">
+          <div className="flex gap-4">
+            <button
+              onClick={handleClick}
+              className="mt-6 bg-[#FFF27e] text-black px-6 py-2 rounded-full"
+            >
               Make an Appointment
             </button>
+            {/* <button className="items-center inline rounded-xl border-[1px] border-b-gray-50  py-1">
+              Learn More
+            </button> */}
           </div>
         </div>
       </div>
