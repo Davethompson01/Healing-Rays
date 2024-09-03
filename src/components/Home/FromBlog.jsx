@@ -25,13 +25,14 @@ const FromBlog = () => {
     },
   ];
   return (
-    <div className="px-3 bg-[#F0F0F0]">
+    <div className="px-3 bg-[#F0F0F0] py-10">
       <div>
-        <h1>
-          From the Blog <span>Latest health news in Nigeria </span> 
+        <h1 className="text-3xl md:px-16 font-bold">From the Blog</h1>
+        <h1 className="text-2xl text-red-600 mb-3  md:px-16">
+          Latest health news in Nigeria 
         </h1>
         <div
-          className={`grid place-content-center gap-5 bg-[f0f0f0] md:px-16 sm:grid-cols-2 md:grid-cols-3 `}
+          className={`grid place-content-center gap-5 bg-[f0f0f0]  sm:grid-cols-2 md:px-8 md:grid-cols-3 `}
         >
           {maps.map((map, index) => (
             <div

@@ -4,26 +4,32 @@ const ImproveHealth = () => {
   const healthcare = [
     {
       h1: "Electronic Medical Records (EMR): ",
-      p: "Get premium access to healthcare in Nigeria withour easy and affordable online clinic that enablesyou consult with foreign healthcare personnel such as top-rated physiotherapists, speech therapists, nutritionists, and occupational health practitioners, alongside Nigerian doctors, and nurses for home care services anytime, anywhere.",
+      p: "Get premium access to healthcare in Nigeria with our easy and affordable online clinic that enables you to consult with foreign healthcare personnel such as top-rated physiotherapists, speech therapists, nutritionists, and occupational health practitioners, alongside Nigerian doctors and nurses for home care services anytime, anywhere.",
     },
     {
       h1: "Non-governmental Organization (NGO): ",
-      p: "Every quarter, we deploy resources and collaborate with international nutrition professionals, Nigerian doctors and a few health blogs in Nigeria to improve the situation of healthcare in Nigeria",
+      p: "Every quarter, we deploy resources and collaborate with international nutrition professionals, Nigerian doctors, and a few health blogs in Nigeria to improve the situation of healthcare in Nigeria.",
     },
     {
       h1: "Online Market Place (OMP):",
-      p: " We stock a wide range of wellness products and medical supplies, thereby improving your access to healthcare in Nigeria",
+      p: "We stock a wide range of wellness products and medical supplies, thereby improving your access to healthcare in Nigeria.",
     },
   ];
+
   return (
     <div>
-      <div className="py-9 bg-gray-300 grid-items-center text-center  px-3 sm:px-10">
+      <div className="py-9 bg-gray-300 grid-items-center text-center px-3 sm:px-10">
         <h1 className="text-[25px] font-semibold pb-5">
           How we improve healthcare in Nigeria
         </h1>
-        <div className="grid gap-8 px-3 sm:grid-cols-2">
+        <div className="grid gap-8 px-3 sm:grid-cols-2 sm:grid-rows-1">
           {healthcare.map((element, index) => (
-            <div key={index} className="bg-white p-4 rounded-3xl ">
+            <div
+              key={index}
+              className={`bg-white p-4 rounded-3xl ${
+                index === 2 ? "sm:col-start-2" : ""
+              }`}
+            >
               <h1 className="font-bold text-[18px]">
                 <svg
                   width="38"

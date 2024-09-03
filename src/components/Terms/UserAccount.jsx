@@ -38,31 +38,30 @@ const UserAccount = () => {
       h1: "9",
       p: " All interactions between you and any assigned patient will be carried out solely via the Healing Rays platform.You will receive and respond to notifications promptly.",
     },
-    // "11.   You will receive only your allocated percentage for every consultation you undertake.",
-    // "12.  You will use all the patient information you have access to for no purpose other than to administer professional medical care.",
-    // "13.  You will be available for medical consultations and that you will transfer any case in your care to another professional when you are unavailable.You may deactivate your account at any time after notifying us via email. Healing Rays reserves the right to remove all your information from the platform following your deactivation.Healing Rays healthcare services does not handle medical emergencies; therefore, you will refer patients with any suspected emergencies to a hospital for immediate care and inform Healing Rays by email where such decision is taken, providing details about the particular case immediately after finishing the consultation.",
   ];
   return (
     <>
-      <div className="px-3 sm:px-10">
-        <h1 className="flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold ">
-          <p>i.</p>
-          <span>
-            User accounts By registering as a doctor on the Healing Rays health
-            platform, you agree that:
-          </span>
-        </h1>
-        <div className="grid gap-y-1  mt-">
-          {maps.map((element, index) => (
-            <div key={index} className="flex gap-7 font-semibold">
-              <h1>{element.h1}</h1>
-              <p>{element.p}</p>
-            </div>
-          ))}
+      <div className=" grid ">
+        <div className="px-3 sm:px-10 max-w-screen-lg">
+          <h1 className="flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold  ">
+            <p>i.</p>
+            <span>
+              User accounts By registering as a doctor on the Healing Rays
+              health platform, you agree that:
+            </span>
+          </h1>
+          <div className="grid gap-y-1  mt-">
+            {maps.map((element, index) => (
+              <div key={index} className="flex gap-7 font-semibold">
+                <h1>{element.h1}</h1>
+                <p>{element.p}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="grid place-items-center mt-16">
-        <div className="w-[94%]  h-[2px] bg-gray-400 "></div>
+        <div className="grid place-items-center mt-16">
+          <div className="w-[94%]  h-[2px] bg-gray-400 "></div>
+        </div>
       </div>
     </>
   );

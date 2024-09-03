@@ -32,17 +32,17 @@ const Nav = () => {
           onClick={toggleMenu}
         >
           <div
-            className={`w-8 h-0.5 bg-black transition-transform duration-300 ${
+            className={`w-8 h-1 z-20 bg-black transition-transform duration-300 ${
               isOpen ? "rotate-45 translate-y-2" : ""
             }`}
           ></div>
           <div
-            className={`w-8 h-0.5 bg-black transition-opacity duration-300 ${
+            className={`w-8 h-1 z-20 bg-black transition-opacity duration-300 ${
               isOpen ? "opacity-0" : "opacity-100"
             }`}
           ></div>
           <div
-            className={`w-8 h-0.5 bg-black transition-transform duration-300 ${
+            className={`w-8 h-1 z-20 bg-black transition-transform duration-300 ${
               isOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           ></div>
@@ -53,10 +53,10 @@ const Nav = () => {
                 : "-translate-x-full opacity-0"
             }`}
           >
-            <ul className="p-4">
+            <ul className="p-4 bg-[#eeff00cb] flex flex-col gap-6 items-center text-white w-[100vw] h-[100vh]">
               {liTags.map((element, index) => (
                 <div key={index}>
-                  <p>
+                  <p className="text-2xl font-bold ">
                     <Link to={element.path}>{element.p}</Link>
                   </p>
                 </div>
