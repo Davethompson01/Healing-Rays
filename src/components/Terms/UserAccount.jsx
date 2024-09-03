@@ -59,8 +59,8 @@ const UserAccount = () => {
             ))}
           </div>
         </div>
-        <div className="grid place-items-center mt-16">
-          <div className="w-[94%]  h-[2px] bg-gray-400 "></div>
+        <div className="grid sm:px-10 mt-16 max-w-screen-lg px-2">
+          <div className="w-full h-[2px] bg-gray-400"></div>
         </div>
       </div>
     </>

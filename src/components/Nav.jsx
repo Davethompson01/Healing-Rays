@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const Nav = () => {
+import { useNavigate } from "react-router-dom";
+const Nav = ({ handleScrollToAbout }) => {
+  const navigate = useNavigate();
   const liTags = [
     { p: "Home", path: "/" },
-    { p: "About", path: "/About" },
+    { p: "About", path: "/#About" },
     { p: "Photo Gallery", path: "/Hotgallery" },
     { p: "Our Team", path: "./OurTeam" },
     { p: "Terms and conditions", path: "./TermsHeader" },
@@ -12,6 +14,18 @@ const Nav = () => {
 
   const toggleMenu = () => setIsOpen((prevState) => !prevState);
 
+  const handleLinkClick = (path) => {
+    if (path === "/#About") {
+      if (window.location.pathname === "/") {
+        handleScrollToAbout();
+      } else {
+        navigate("/");
+        setTimeout(handleScrollToAbout, 0);
+      }
+    } else {
+      navigate(path);
+    }
+  };
   return (
     <div className="bg-gray-300">
       <div className="relative flex justify-between max-w-screen-lg items-center px-6 py-2 md:px-10">
@@ -21,7 +35,11 @@ const Nav = () => {
         <div className="hidden sm:flex">
           <ul className="p-4 flex gap-5">
             {liTags.map((element, index) => (
-              <li key={index} className="py-2">
+              <li
+                key={index}
+                className="py-2"
+                onClick={() => handleLinkClick(element.path)}
+              >
                 <Link to={element.path}>{element.p}</Link>
               </li>
             ))}
@@ -33,7 +51,7 @@ const Nav = () => {
         >
           <div
             className={`w-8 h-1 z-20 bg-black transition-transform duration-300 ${
-              isOpen ? "rotate-45 translate-y-2" : ""
+              isOpen ? "rotate-45 translate-y-2 bg-white" : ""
             }`}
           ></div>
           <div
@@ -43,7 +61,7 @@ const Nav = () => {
           ></div>
           <div
             className={`w-8 h-1 z-20 bg-black transition-transform duration-300 ${
-              isOpen ? "-rotate-45 -translate-y-2" : ""
+              isOpen ? "-rotate-45 -translate-y-2 bg-white" : ""
             }`}
           ></div>
           <div
@@ -53,11 +71,23 @@ const Nav = () => {
                 : "-translate-x-full opacity-0"
             }`}
           >
-            <ul className="p-4 bg-[#eeff00cb] flex flex-col gap-6 items-center text-white w-[100vw] h-[100vh]">
+            <ul
+              className={`p-4 bg-black  flex flex-col gap-6 items-center   text-white w-[100vw] h-[100vh] transition-transform duration-300 transform ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              }`}
+            >
+              <div>
+                <img src="logo.png" alt="" />
+              </div>
               {liTags.map((element, index) => (
                 <div key={index}>
-                  <p className="text-2xl font-bold ">
-                    <Link to={element.path}>{element.p}</Link>
+                  <p className="text-2xl font-bold">
+                    <Link
+                      to={element.path}
+                      onClick={() => handleLinkClick(element.path)}
+                    >
+                      {element.p}
+                    </Link>
                   </p>
                 </div>
               ))}

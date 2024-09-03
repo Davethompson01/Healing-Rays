@@ -2,25 +2,24 @@ import React from "react";
 // import { useRef } from "react";
 
 const MainPage = () => {
-  
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat before:bg-black z-50"
       style={{
         backgroundImage: "url('/background.png')",
         width: "100%",
         height: "500px",
       }}
     >
-      <div className="relative inset-0 flex items-center justify-start">
-        <div className=" md:bg-yellow-500 md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-4">
+      <div className="relative  flex items-center justify-start  ">
+        <div className=" md:bg-[#DEBB41] md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-4">
           <h1 className="text-4xl  md:text-[3rem] font-bold text-white">
             The No.1 Platform for Telemedicine in Nigeria
           </h1>
           <p className="text-[20px] font-bold  text-yellow-300 md:text-3xl">
             Premium access to healthcare in Nigeria
           </p>
-          <p className="text-white">
+          <p className="text-white ">
             Say goodbye to exorbitant consultation fees, long wait lines, and
             the lack of access to healthcare in Nigeria. As a leading provider
             of telemedicine in Nigeria, Healing Rays brings the doctor to your

@@ -4,11 +4,11 @@ const Payment = () => {
   return (
     <>
       <div>
-        <div className="grid mt-6 gap-y-10 px-3 sm:px-10 font-semibold ">
-          <p className=" flex gap-x-3 sm:gap-x-10 text-[#0A4F1b] text-[18px] font-bold">
+        <div className="grid mt-6 gap-y-4 px-3 sm:px-10 font-semibold  max-w-screen-lg">
+          <p className=" flex gap-x-3 sm:gap-x-10 text-[#0A4F1b] text-[18px] font-bold ">
             II. <span>Payments</span>
           </p>
-          <p>
+          <p className="">
             You agree to an annual subscription fee of ₦10,000 (for specialists)
             and ₦7,000 (for general practitioners) to remain active on the
             platform. If you are a doctor outside Nigeria, you agree to an

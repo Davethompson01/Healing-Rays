@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const AboutUs = () => {
   return (
     <div className="bg-[#fff27e] px-2 text-center sm:px-16 py-10 grid gap-3 font-medium">
       <h1 className="font-semibold text-[40px]">About Us</h1>
@@ -30,4 +30,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;
