@@ -33,13 +33,14 @@ const Healing = () => {
       h3: "Name : Mrs Odebode Abimbola Solape",
       p: "Faith: Christianity",
       p1: "I am Nigerian by birth and also a British National. I am an indigene of Ijebu Igbo, Ogun State, Nigeria. I am a trained Electrical and Electronics Engineer, having obtained BEng Honours in Electrical and Electronics Engineering from UEL (University of East London), England over 17 years ago. Then, awarded an MSc in Computational & Software Techniques in Engineering including Mini Executive MBA program from Cranfield University, Bedfordshire, England over 16 years ago, completion Date September 2004. I have a number of IT Certifications including ISEB and Prince2 and some Organization specific training Certificates.",
-    },{
-      img:team4,
-      h1:"The international network (Swiss):",
-      h3:"Dr. Christoph A. Reinhardt",
-      p:"HealingRays supporter and financial initiator of the website. ",
-      p1:"As a trained biologist he is experienced in Electron Microscopy, Tropical Medicine, Developmental Genetics, Toxicology and cell culture techniques in Switzerland (Swiss Tropical Institute, Univ. Basel; University of California, Irvine; Swiss Federal Institute of Technology, Zurich, among others). As a teacher and father of 6 children and grandfather of 11 grandchildren he is also experienced in practical life - as well as in music (classical and Spanish guitar, Gospel and Blues). And more recently he has built up a political network with the senior Green Liberal Party of the canton of Zurich, engaged in social reforms locally as well as internationally."
-    }
+    },
+    {
+      img: team4,
+      h1: "The international network (Swiss):",
+      h3: "Dr. Christoph A. Reinhardt",
+      p: "HealingRays supporter and financial initiator of the website. ",
+      p1: "As a trained biologist he is experienced in Electron Microscopy, Tropical Medicine, Developmental Genetics, Toxicology and cell culture techniques in Switzerland (Swiss Tropical Institute, Univ. Basel; University of California, Irvine; Swiss Federal Institute of Technology, Zurich, among others). As a teacher and father of 6 children and grandfather of 11 grandchildren he is also experienced in practical life - as well as in music (classical and Spanish guitar, Gospel and Blues). And more recently he has built up a political network with the senior Green Liberal Party of the canton of Zurich, engaged in social reforms locally as well as internationally.",
+    },
   ];
 
   return (
@@ -52,7 +53,7 @@ const Healing = () => {
         {maps.map((element, index) => (
           <div
             key={index}
-            className="bg-white h-[450px] overflow-hidden gap-5 rounded-xl px-3 grid place-items-center py-5 lg:flex items-start lg:h-auto"
+            className="bg-white w-full h-[450px] overflow-hidden gap-5 rounded-xl px-3 grid place-items-center py-5 lg:flex items-start lg:h-auto"
           >
             <div className="px-3 basis-[20%] ">
               <img src={element.img} alt="" className="w-[180px] h-[180px] " />
@@ -73,9 +74,9 @@ const Healing = () => {
                       : "lg:max-h-[none]"
                   }`}
                 >
-                  {expandedIndex === index || window.innerWidth >= 1024
+                  {expandedIndex === index
                     ? element.p1 || element.p
-                    : `${element.p.slice(0, 100)}...`}
+                    : element.p.slice(0, 100) + "..."}
                 </p>
                 {window.innerWidth < 1024 && (
                   <button
