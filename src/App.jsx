@@ -6,6 +6,7 @@ import Terms from "./pages/Terms";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Contact from "./pages/contact";
 
 const App = () => {
   const [scrollToAbout, setScrollToAbout] = useState(false);
@@ -46,6 +47,7 @@ const App = () => {
           }
         />
         <Route path="/TermsHeader" element={<Terms />} />
+        <Route path="ContactUs/" element={<Contact/>} />
         <Route path="/TermsHeader" element={<Terms />} />
         <Route path="/OurTeam" element={<Team />} />
       </Routes>
