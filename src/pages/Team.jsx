@@ -4,7 +4,7 @@ import Healing from "../components/OurTeam/Healing";
 const Team = () => {
   return (
     <div>
-      <Healing />
+      <Healing  />
     </div>
   );
 };

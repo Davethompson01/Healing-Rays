@@ -27,7 +27,7 @@ const Nav = ({ handleScrollToAbout }) => {
     }
   };
   return (
-    <div className="bg-gray-300">
+    <div className="bg-white">
       <div className="relative flex justify-between max-w-screen-lg items-center px-6 py-2 md:px-10">
         <div>
           <img src="/logo.png" alt="Logo" />

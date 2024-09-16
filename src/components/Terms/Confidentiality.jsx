@@ -7,7 +7,7 @@ const Confidentiality = () => {
         className="mb-7 max-w-screen-lg
       "
       >
-        <div className="grid mt-8 gap-y-8 px-3 sm:px-10 font-semibold ">
+        <div className="grid mt-8 gap-y-8 px-3 sm:px-10 font-normal ">
           <p className=" flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold ">
             Iv. <span>Confidentiality (Disclosure of Information)</span>
           </p>

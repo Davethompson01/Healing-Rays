@@ -8,7 +8,7 @@ const Verificant = () => {
       "
       >
         <div className="grid mt-8 gap-y-8 px-3 sm:px-10 font-semibold ">
-          <p className=" flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold ">
+          <p className=" flex gap-x-3  sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold ">
             III. <span>Verification</span>
           </p>
           <p>

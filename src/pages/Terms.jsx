@@ -10,14 +10,14 @@ import Policy from "../components/Terms/Policy";
 const Terms = () => {
   return (
     <>
-      <div className="bg-gray-300">
-      <TermsHeader />
-      <UserAccount />
-      <Payment />
-      <Verificant />
-      <Confidentiality />
-      <Bookings />
-      <Policy />
+      <div className="bg-white">
+        <TermsHeader />
+        <UserAccount />
+        <Payment />
+        <Verificant />
+        <Confidentiality />
+        <Bookings />
+        <Policy />
       </div>
     </>
   );

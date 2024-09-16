@@ -4,7 +4,7 @@ import med1 from "../../assets/med1.png";
 const Contactpage = () => {
   return (
     <>
-      <div className="px-6 py-6 md:px-10">
+      <div className="px-6 py-6 md:px-10 bg-[#FaF9F6]">
         <div className="grid gap-y-10 mb-8">
           <h1 className="text-green-800 font-bold text-[2.5rem] text-center">
             Contact Us
@@ -22,14 +22,14 @@ const Contactpage = () => {
                 name=""
                 id=""
                 placeholder="Name"
-                className="w-full bg-gray-200 h-[40px] text-black p-3 focus:outline-none focus:ring-2 focus:ring-red-600 rounded-lg border-[1px] border-green-600"
+                className="w-full bg-gray-200 h-[40px] text-black p-3 focus:outline-none focus:ring-2 focus:ring-orange-300 rounded-lg border-[1px] border-orange-300"
               />
               <input
                 type="text"
                 name=""
                 id=""
-                placeholder="email"
-                className="w-full bg-gray-200  focus:outline-none focus:ring-2 focus:ring-red-600 h-[40px] border-[1px] border-green-600 text-black p-3 rounded-lg"
+                placeholder="Email"
+                className="w-full bg-gray-200  focus:outline-none focus:ring-2 focus:ring-orange-300 h-[40px] border-[1px] border-orange-300 text-black p-3 rounded-lg"
               />
             </div>
             <div className="sm:flex basis-[50%] grid gap-7">
@@ -38,19 +38,19 @@ const Contactpage = () => {
                 name=""
                 id=""
                 placeholder="Phone Number"
-                className="w-full focus:outline-none focus:ring-2 focus:ring-red-600 bg-gray-200 h-[40px] border-[1px] border-green-600 text-black p-3 rounded-lg"
+                className="w-full focus:outline-none focus:ring-2 focus:ring-orange-300 bg-gray-200 h-[40px] border-[1px] border-orange-300 text-black p-3 rounded-lg"
               />
               <input
                 type="text"
                 name=""
                 id=""
                 placeholder="Subject"
-                className="w-full focus:outline-none focus:ring-2 focus:ring-red-600 bg-gray-200 border-[1px] border-green-600 h-[40px] text-black p-3 rounded-lg"
+                className="w-full focus:outline-none focus:ring-2 focus:ring-orange-300 bg-gray-200 border-[1px] border-orange-300 h-[40px] text-black p-3 rounded-lg"
               />
             </div>
             <textarea
               name=""
-              className="h-[400px] focus:outline-none focus:ring-2 focus:ring-red-600 bg-gray-200 w-full rounded-xl sm:h-[200px] p-5 border-[2px] border-green-600"
+              className="h-[400px] focus:outline-none focus:ring-2 focus:ring-orange-300 bg-gray-200 w-full rounded-xl sm:h-[200px] p-5 border-[2px] border-orange-300"
               placeholder="message"
               id=""
             ></textarea>

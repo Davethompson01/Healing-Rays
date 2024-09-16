@@ -55,7 +55,7 @@ const Healing = () => {
   ];
 
   return (
-    <div className="bg-[#F0F0F0] pb-8">
+    <div className="bg-[#FaF9F6] pb-8">
       <h1 className="text-black px-5 text-center text-[1.3rem] font-semibold py-8">
         Healing Rays Team and Member
       </h1>
@@ -64,7 +64,7 @@ const Healing = () => {
         {maps.map((element, index) => (
           <div
             key={index}
-            className="bg-white w-full h-[450px] overflow-hidden gap-5 rounded-xl px-3 grid place-items-center py-5 lg:flex items-start lg:h-auto"
+            className=" border-[1px] border-orange-300  w-full h-[450px] overflow-hidden gap-5 rounded-xl px-3 grid place-items-center py-5 lg:flex items-start lg:h-auto"
           >
             <div className="px-3 basis-[20%]">
               <img src={element.img} alt="" className="w-[180px] h-[180px]" />

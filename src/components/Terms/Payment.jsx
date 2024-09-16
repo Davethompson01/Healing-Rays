@@ -4,7 +4,7 @@ const Payment = () => {
   return (
     <>
       <div>
-        <div className="grid mt-6 gap-y-4 px-3 sm:px-10 font-semibold  max-w-screen-lg">
+        <div className="grid mt-6 gap-y-4 px-3 sm:px-10 font-normal  max-w-screen-lg">
           <p className=" flex gap-x-3 sm:gap-x-10 text-[#0A4F1b] text-[18px] font-bold ">
             II. <span>Payments</span>
           </p>

@@ -34,7 +34,7 @@ const MainPage = () => {
             of telemedicine in Nigeria, Healing Rays brings the doctor to your
             doorstep.
           </p>
-          <div className=" flex gap-5 flex-wrap md:flex md:gap-4">
+          <div className=" flex gap-2  flex-wrap md:flex md:gap-4">
             <button
               onClick={handleClick}
               className="mt-6 bg-[#FFF27e] text-black  opacity-[87px] font-semibold  px-6 py-2 rounded-full"

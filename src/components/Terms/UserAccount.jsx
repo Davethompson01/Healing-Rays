@@ -43,7 +43,7 @@ const UserAccount = () => {
     <>
       <div className=" grid ">
         <div className="px-3 sm:px-10 max-w-screen-lg">
-          <h1 className="flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-bold  ">
+          <h1 className="flex gap-x-3 sm:gap-x-12 text-[#0A4F1b] text-[18px] font-normal  ">
             <p>i.</p>
             <span>
               User accounts By registering as a doctor on the Healing Rays
@@ -52,7 +52,7 @@ const UserAccount = () => {
           </h1>
           <div className="grid gap-y-1  mt-">
             {maps.map((element, index) => (
-              <div key={index} className="flex gap-7 font-semibold">
+              <div key={index} className="flex gap-7 font-normal">
                 <h1>{element.h1}</h1>
                 <p>{element.p}</p>
               </div>
