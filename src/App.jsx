@@ -33,7 +33,6 @@ const App = () => {
     <>
       <Nav handleScrollToAbout={handleScrollToAbout} />
       <Routes>
-      
         <Route
           path="/"
           element={
@@ -43,12 +42,12 @@ const App = () => {
             />
           }
         />
-        <Route path="/TermsHeader" element={<Terms />} />
-        <Route path="ContactUs/" element={<Contact/>} />
+
+        <Route path="ContactUs/" element={<Contact />} />
         <Route path="/TermsHeader" element={<Terms />} />
         <Route path="/OurTeam" element={<Team />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 };
