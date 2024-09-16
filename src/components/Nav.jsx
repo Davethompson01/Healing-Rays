@@ -33,7 +33,7 @@ const Nav = ({ handleScrollToAbout }) => {
           <img src="/logo.png" alt="Logo" />
         </div>
         <div className="hidden sm:flex">
-          <ul className="p-4 flex gap-4">
+          <ul className="p-4 flex gap-5">
             {liTags.map((element, index) => (
               <li
                 key={index}
@@ -65,14 +65,14 @@ const Nav = ({ handleScrollToAbout }) => {
             }`}
           ></div>
           <div
-            className={`absolute top-0 left-0 w-48 bg-white border border-gray-300 shadow-lg transition-transform duration-300 transform ${
+            className={`absolute top-0 left-0    transition-transform duration-300 transform ${
               isOpen
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-full opacity-0"
             }`}
           >
             <ul
-              className={`p-4 bg-black opacity-90 flex flex-col gap-6 items-center   text-white w-[100vw] h-[100vh] transition-transform duration-300 transform ${
+              className={`p-4 bg-black/80 flex flex-col gap-6 items-center   text-white w-[100vw] h-[100vh] transition-transform duration-300 transform ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >

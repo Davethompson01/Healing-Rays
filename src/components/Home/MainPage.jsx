@@ -12,7 +12,7 @@ const MainPage = () => {
   };
   return (
     <div
-      className="bg-cover relative bg-center flex bg-no-repeat before:bg-black z-50  "
+      className="bg-cover relative bg-center flex bg-no-repeat before:bg-black  "
       style={{
         backgroundImage: "url('/background.png')",
         width: "100%",
@@ -21,7 +21,6 @@ const MainPage = () => {
     >
       <div class=" absolute bg-gradient-to-l from-transparent to-black via-orange-300 opacity-55  w-full h-[600px] "></div>
       <div className="relative  flex items-center justify-start  ">
-        <div class="bg-gradient-to-r from-gray-300 to-black via-orange-300 opacity-90"></div>
         <div className="grid gap-3 md:bg-opacity-30 p-8 md:w-[60%] md:grid md:gap-5 z-40">
           <h1 className="text-4xl  md:text-[3rem] font-bold text-white">
             The No.1 Platform for Telemedicine in Nigeria
