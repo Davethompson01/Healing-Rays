@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Contact from "./pages/contact";
 
+
+
 const App = () => {
   const [scrollToAbout, setScrollToAbout] = useState(false);
   const location = useLocation();
