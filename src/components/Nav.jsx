@@ -33,7 +33,7 @@ const Nav = ({ handleScrollToAbout }) => {
           <img src="/logo.png" alt="Logo" />
         </div>
         <div className="hidden sm:flex">
-          <ul className="p-4 flex gap-5">
+          <ul className="p-4 flex gap-4">
             {liTags.map((element, index) => (
               <li
                 key={index}

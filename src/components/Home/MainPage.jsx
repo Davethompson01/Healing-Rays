@@ -12,19 +12,21 @@ const MainPage = () => {
   };
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat before:bg-black z-50  "
+      className="bg-cover relative bg-center flex bg-no-repeat before:bg-black z-50  "
       style={{
         backgroundImage: "url('/background.png')",
         width: "100%",
         height: "600px",
       }}
     >
+      <div class=" absolute bg-gradient-to-l from-transparent to-black via-orange-300 opacity-55  w-full h-[600px] "></div>
       <div className="relative  flex items-center justify-start  ">
-        <div className="  md:bg-opacity-30 p-8 md:w-[60%] md:grid gap-8">
+        <div class="bg-gradient-to-r from-gray-300 to-black via-orange-300 opacity-90"></div>
+        <div className="grid gap-3 md:bg-opacity-30 p-8 md:w-[60%] md:grid md:gap-5 z-40">
           <h1 className="text-4xl  md:text-[3rem] font-bold text-white">
             The No.1 Platform for Telemedicine in Nigeria
           </h1>
-          <p className="text-[20px] font-bold bg-[#0a4f1b] sm:bg-transparent p-2 inline-block text-yellow-300 md:text-3xl">
+          <p className=" max-w-[459px]  text-[20px] font-bold bg-[#0a4f1b] p-2 rounded-[10px] text-yellow-300 md:text-3xl">
             Premium access to healthcare in Nigeria
           </p>
           <p className="text-white ">
@@ -33,16 +35,17 @@ const MainPage = () => {
             of telemedicine in Nigeria, Healing Rays brings the doctor to your
             doorstep.
           </p>
-          <div className="sm:flex gap-4">
+          <div className=" flex gap-5 flex-wrap md:flex md:gap-4">
             <button
               onClick={handleClick}
-              className="mt-6 bg-[#FFF27e] text-black px-6 py-2 rounded-full"
+              className="mt-6 bg-[#FFF27e] text-black  opacity-[87px] font-semibold  px-6 py-2 rounded-full"
             >
               Make an Appointment
             </button>
-            <button 
-            onClick={contactClick}
-            className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full">
+            <button
+              onClick={contactClick}
+              className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full"
+            >
               Learn More
             </button>
           </div>

@@ -25,10 +25,10 @@ const FromBlog = () => {
     },
   ];
   return (
-    <div className="px-3 bg-[#F0F0F0] py-10">
+    <div className="px-3 bg-[#F0F0F0] py-[80px]">
       <div>
-        <h1 className="text-3xl md:px-16 font-bold">From the Blog</h1>
-        <h1 className="text-2xl text-red-600 mb-3  md:px-16">
+        <h1 className="text-3xl md:px-10 font-bold">From the Blog</h1>
+        <h1 className="text-2xl text-red-600 mb-3  md:px-10">
           Latest health news in Nigeria 
         </h1>
         <div

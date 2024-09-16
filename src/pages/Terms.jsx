@@ -10,6 +10,7 @@ import Policy from "../components/Terms/Policy";
 const Terms = () => {
   return (
     <>
+      <div className="bg-gray-300">
       <TermsHeader />
       <UserAccount />
       <Payment />
@@ -17,6 +18,7 @@ const Terms = () => {
       <Confidentiality />
       <Bookings />
       <Policy />
+      </div>
     </>
   );
 };

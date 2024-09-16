@@ -4,7 +4,7 @@ const Bookings = () => {
   return (
     <>
       <div
-        className="mb-7
+        className="mb-7 max-w-screen-lg
       "
       >
         <div className="grid mt-8 gap-y-10 px-3 sm:px-10 font-semibold ">

@@ -19,7 +19,7 @@ const Testimonials = () => {
     <>
       <div className="bg-green-800 grid px-4 md:px-8 gap-8 text-white  place-content-center pt-8">
         <h1 className="text-white text-[2.3rem]">Testimonials</h1>
-        <div className="grid gap-y-8 max-w-screen-md">
+        <div className="grid gap-y-8 ">
           {maps.map((element, index) => (
             <div key={index} className="grid gap-4">
               <p>{element.h1}</p>

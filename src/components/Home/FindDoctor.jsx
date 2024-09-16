@@ -10,8 +10,8 @@ const FindDoctor = () => {
     "✓ 100% trustworthy, private, and confidential",
   ];
   return (
-    <div className="grid place-content-center ">
-      <div className="py-10 px-8 grid gap-7 md:flex max-w-[1200px] place-content-center">
+    <div className="grid place-content-center bg-white py-8">
+      <div className="py-20 px-8 grid gap-[100px] md:flex max-w-[1200px] place-content-center">
         <div className="flex flex-col gap-3  " style={{ flexBasis: "50%" }}>
           <h1 className="text-[2rem] font-semibold ">
             Find an online doctor in Nigeria
@@ -31,7 +31,7 @@ const FindDoctor = () => {
         </div>
         <div className="relative pl-4" style={{ flexBasis: "40%" }}>
           <img src="finddoctor.png" alt="" className="md:h-[300px]" />
-          <img src="/finddoctor1.png" alt="" className="md:h-[300px]" />
+          <img src="/finddoctor1.png" alt="" className="md:h-[300px] md:absolute top-[250px] " />
         </div>
       </div>
     </div>
