@@ -28,7 +28,7 @@ const ImproveHealth = () => {
             {healthcare.map((element, index) => (
               <div
                 key={index}
-                className={`bg-white h-[290px] p-4 rounded-3xl `}
+                className={`bg-white  p-4 rounded-3xl `}
               >
                 <h1 className="font-bold text-[18px]">
                   <svg
