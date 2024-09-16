@@ -33,10 +33,7 @@ const App = () => {
     <>
       <Nav handleScrollToAbout={handleScrollToAbout} />
       <Routes>
-        {/* <Route
-          path="/"
-          element={<Home scrollToAbout={scrollToAbout} setScrollToAbout={setScrollToAbout} />}
-        /> */}
+      
         <Route
           path="/"
           element={
