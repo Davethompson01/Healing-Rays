@@ -24,23 +24,25 @@ const Home = ({ scrollToAbout, setScrollToAbout }) => {
   }, [scrollToAbout, setScrollToAbout]);
 
   return (
-    <div>
-      <MainPage/>
-      <ImproveHealth/>
-      <FindDoctor/>
-      <div ref={aboutRef}>
-        <AboutUs/>
-      </div>
-      {/* <MainPage /> */}
-      {/* <ImproveHealth /> */}
-      {/* <FindDoctor /> */}
-      {/* <div ref={aboutRef}>
+    <>
+      <div className="bg-gray-300">
+        <MainPage />
+        <ImproveHealth />
+        <FindDoctor />
+        <div ref={aboutRef}>
+          <AboutUs />
+        </div>
+        {/* <MainPage /> */}
+        {/* <ImproveHealth /> */}
+        {/* <FindDoctor /> */}
+        {/* <div ref={aboutRef}>
         <AboutUs />
       </div> */}
-      {/* <JoinUs /> */}
-      <FromBlog />
-      <Testimonials />
-    </div>
+        {/* <JoinUs /> */}
+        <FromBlog />
+        <Testimonials />
+      </div>
+    </>
   );
 };
 

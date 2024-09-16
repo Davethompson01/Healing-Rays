@@ -65,6 +65,11 @@ const Contactpage = () => {
             <img src={med1} alt="" className="sm:h-[500px] " />
           </div>
         </div>
+        <div className="bg-[#fffaca] grid place-content-center  h-[200px]">
+          <h1 className="text-xl sm:text-2xl font-bold   text-center">Get Your Free Medical Checkup.</h1>
+          <h1 className="text-xl sm:text-2xl font-bold   text-center">Let's Connect With Us!</h1>
+          <p className="text-center mt-6 text-white bg-[#0a4f1b] inline-block p-3 rounded-3xl">Contact us</p>
+        </div>
       </div>
     </>
   );

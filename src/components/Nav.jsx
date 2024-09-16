@@ -6,7 +6,7 @@ const Nav = ({ handleScrollToAbout }) => {
   const liTags = [
     { p: "Home", path: "/" },
     { p: "About", path: "/#About" },
-    { p: "Contact Us", path: "/ContacUs" },
+    { p: "Contact Us", path: "/ContactUs" },
     { p: "Our Team", path: "./OurTeam" },
     { p: "Terms and conditions", path: "./TermsHeader" },
   ];
@@ -72,7 +72,7 @@ const Nav = ({ handleScrollToAbout }) => {
             }`}
           >
             <ul
-              className={`p-4 bg-black blur-xl flex flex-col gap-6 items-center   text-white w-[100vw] h-[100vh] transition-transform duration-300 transform ${
+              className={`p-4 bg-black opacity-90 flex flex-col gap-6 items-center   text-white w-[100vw] h-[100vh] transition-transform duration-300 transform ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >
