@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
-// import Home from "./pages/Home";
 import Terms from "./pages/Terms";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
