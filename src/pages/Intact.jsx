@@ -1,12 +1,12 @@
 import React from "react";
 import Contactpage from "../components/Contact/Contactpage";
 
-const Contact = () => {
+const Intact = () => {
   return (
-    <div>
+    <>
       <Contactpage />
-    </div>
+    </>
   );
 };
 
-export default Contact;
+export default Intact;
