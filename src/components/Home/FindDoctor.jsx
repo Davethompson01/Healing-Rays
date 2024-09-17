@@ -1,4 +1,6 @@
 import React from "react";
+import doctor from "../../assets/finddoctor.png";
+import doctor1 from "../../assets/finddoctor1.png";
 
 const FindDoctor = () => {
   const onlines = [
@@ -30,8 +32,12 @@ const FindDoctor = () => {
           </div>
         </div>
         <div className="relative pl-4" style={{ flexBasis: "40%" }}>
-          <img src="finddoctor.png" alt="" className="md:h-[300px]" />
-          <img src="/finddoctor1.png" alt="" className="md:h-[300px] md:absolute top-[250px] " />
+          <img src={doctor} alt="" className="md:h-[300px]" />
+          <img
+            src={doctor1}
+            alt=""
+            className="md:h-[300px] md:absolute top-[250px] "
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import background from "../../assets/background.png";
 // import { useRef } from "react";
 
 const MainPage = () => {
@@ -14,7 +15,7 @@ const MainPage = () => {
     <div
       className="bg-cover relative bg-center flex bg-no-repeat before:bg-black  "
       style={{
-        backgroundImage: "url('/background.png')",
+        backgroundImage: `url(${background})`,
         width: "100%",
         height: "600px",
       }}
