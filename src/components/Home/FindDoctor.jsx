@@ -13,7 +13,7 @@ const FindDoctor = () => {
   ];
   return (
     <div className="grid place-content-center bg-white py-8">
-      <div className="py-20 px-8 grid gap-[100px] md:flex max-w-[1200px] place-content-center">
+      <div className="py-20 px-8 grid gap-[100px] md:flex  place-content-center">
         <div className="flex flex-col gap-3  " style={{ flexBasis: "50%" }}>
           <h1 className="text-[2rem] font-semibold ">
             Find an online doctor in Nigeria
@@ -36,7 +36,7 @@ const FindDoctor = () => {
           <img
             src={doctor1}
             alt=""
-            className="md:h-[300px] md:absolute top-[250px] "
+            className="md:h-[300px] md:absolute top-[220px] "
           />
         </div>
       </div>

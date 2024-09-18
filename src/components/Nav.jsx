@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const Nav = ({ handleScrollToAbout }) => {
@@ -11,6 +12,7 @@ const Nav = ({ handleScrollToAbout }) => {
     { p: "Terms and conditions", path: "./TermsHeader" },
   ];
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen((prevState) => !prevState);
 
@@ -37,10 +39,20 @@ const Nav = ({ handleScrollToAbout }) => {
             {liTags.map((element, index) => (
               <li
                 key={index}
-                className="py-2 font-bold text-[17px]"
+                className={`py-2 font-semi text-[17px] ${
+                  location.pathname === element.path ? "text-yellow-400" : ""
+                }`}
                 onClick={() => handleLinkClick(element.path)}
               >
-                <Link to={element.path}>{element.p}</Link>
+                <Link
+                  to={element.path}
+                  exact={true}
+                  className={`py-2 font-semi text-[17px] ${
+                    location.pathname === element.path ? "text-yellow-400" : ""
+                  }`}
+                >
+                  {element.p}
+                </Link>
               </li>
             ))}
           </ul>
