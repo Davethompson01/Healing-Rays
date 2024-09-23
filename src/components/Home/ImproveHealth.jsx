@@ -26,10 +26,7 @@ const ImproveHealth = () => {
         <div className="sm:grid grid-cols-2 ">
           <div className="grid gap-8 px-3 sm:grid-cols-1 ">
             {healthcare.map((element, index) => (
-              <div
-                key={index}
-                className={`bg-white  p-4 rounded-3xl `}
-              >
+              <div key={index} className={`bg-white  p-4 rounded-3xl `}>
                 <h1 className="font-bold text-[18px]">
                   <svg
                     width="38"

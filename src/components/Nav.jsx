@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+  import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -32,7 +32,7 @@ const Nav = ({ handleScrollToAbout }) => {
     <div className="bg-white">
       <div className="relative flex justify-between max-w-screen-lg items-center px-6 py-2 md:px-10">
         <div>
-          <img src="/logo.png" alt="Logo" />
+          <img src="/logo.png" alt="Logo" className="w-[50px]" />
         </div>
         <div className="hidden sm:flex">
           <ul className="p-4 flex gap-5">
@@ -89,7 +89,7 @@ const Nav = ({ handleScrollToAbout }) => {
               }`}
             >
               <div>
-                <img src="logo.png" alt="" />
+                <img src="logo.png" alt=""  className="w-[50px]" />
               </div>
               {liTags.map((element, index) => (
                 <div key={index}>

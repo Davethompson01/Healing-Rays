@@ -19,7 +19,7 @@ const MainPage = () => {
         width: "100%",
         height: "600px",
       }}
-    >
+    > 
       <div class=" absolute bg-gradient-to-l from-transparent to-black via-orange-300 opacity-55  w-full h-[600px] "></div>
       <div className="relative  flex items-center justify-start  ">
         <div className="grid gap-3 md:bg-opacity-30 p-8 md:w-[60%] md:grid md:gap-5 z-40">
