@@ -19,7 +19,7 @@ const MainPage = () => {
         width: "100%",
         height: "600px",
       }}
-    > 
+    >
       <div class=" absolute bg-gradient-to-l from-transparent to-black via-orange-300 opacity-55  w-full h-[600px] "></div>
       <div className="relative  flex items-center justify-start  ">
         <div className="grid gap-3 md:bg-opacity-30 p-8 md:w-[60%] md:grid md:gap-5 z-40">
@@ -36,18 +36,25 @@ const MainPage = () => {
             doorstep.
           </p>
           <div className=" flex gap-2  flex-wrap md:flex md:gap-4">
-            <button
-              onClick={handleClick}
-              className="mt-6 bg-[#FFF27e] text-black  opacity-[87px] font-semibold  px-6 py-2 rounded-full"
+            <a
+              href="https://heiler.health"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Make an Appointment
-            </button>
-            <button
-              onClick={contactClick}
-              className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full"
+              <button className="mt-6 bg-[#FFF27e] text-black  opacity-[87px] font-semibold  px-6 py-2 rounded-full">
+                {" "}
+                Make an Appointment
+              </button>
+            </a>
+            <a
+              href="http://app.heiler.health/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Learn More
-            </button>
+              <button className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full">
+                Learn More
+              </button>
+            </a>
           </div>
         </div>
       </div>

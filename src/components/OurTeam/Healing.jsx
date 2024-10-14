@@ -25,6 +25,14 @@ const Healing = () => {
   const maps = [
     {
       img: team1,
+      h1: "Founder Healingrays Healthcare Services, Healingrays Nutritional NGO.",
+      h3: "Name: Dr. Adebode Joseph Olusegun. ",
+      h4: "Faith: Christianity",
+      p: "I am Nigerian by birth and also a British National. I am an indigene of Ijebu Igbo, Ogun State, Nigeria.",
+      p1: ""
+    },
+    {
+      img: team1,
       h1: "Voluntary adviser in charge of IT",
       h3: "Mr Oladimeji Daniel TADE",
       h4: "Faith: Christianity",
