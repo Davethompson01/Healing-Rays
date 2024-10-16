@@ -51,9 +51,9 @@ const MainPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full">
+              {/* <button className="mt-6 bg-transparent border-[1px] text-white px-6 py-2 rounded-full">
                 Learn More
-              </button>
+              </button> */}
             </a>
           </div>
         </div>

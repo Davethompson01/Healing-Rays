@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import team1 from "../../assets/team1.png";
+import book from "../../assets/boo.png";
 import team2 from "../../assets/team2.png";
 import team3 from "../../assets/team3.png";
 import team4 from "../../assets/team4.png";
@@ -11,6 +12,7 @@ const Healing = () => {
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
+      
       setIsMobile(window.innerWidth < 3000);
     };
 
@@ -24,12 +26,12 @@ const Healing = () => {
 
   const maps = [
     {
-      img: team1,
+      img: book,
       h1: "Founder Healingrays Healthcare Services, Healingrays Nutritional NGO.",
       h3: "Name: Dr. Adebode Joseph Olusegun. ",
-      h4: "Faith: Christianity",
-      p: "I am Nigerian by birth and also a British National. I am an indigene of Ijebu Igbo, Ogun State, Nigeria.",
-      p1: ""
+
+      p: "I am Dr odebode Joseph Olusegun, a Medical Entrepreneur of more than 12 years experience MBCHB, OAU ile-ife, Osun state Nigeria.",
+      p1: " MAS( Master of Advance study in Human Nutrition and Health from ETH Zurich Switzerland. Certified Aesthetic laser medicine practitioner at Smartaging Laser Acedemy, Zurich Switzerland. Certified LSO( Laaser Safety Officer) by UVEX Germany and ETH ZURICH. Member Swiss Laser medicine Association. Founder Healingrays Healthcare Services, Healingrays Nutritional NGO. ",
     },
     {
       img: team1,
