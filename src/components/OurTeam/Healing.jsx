@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import team1 from "../../assets/team1.png";
-import book from "../../assets/boo.png";
+import book from "../../assets/book.png";
 import team2 from "../../assets/team2.png";
 import team3 from "../../assets/team3.png";
 import team4 from "../../assets/team4.png";
@@ -12,7 +12,6 @@ const Healing = () => {
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
-      
       setIsMobile(window.innerWidth < 3000);
     };
 
